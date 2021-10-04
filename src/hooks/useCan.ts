@@ -15,5 +15,5 @@ export function useCan({ permissions, roles }: UseCanParams) {
 
   const userHasValidPermissions = validateUserPermissions({ user, permissions, roles });
 
-  return true;
+  return userHasValidPermissions;
 }
